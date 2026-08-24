@@ -1,18 +1,39 @@
 .background {
-    background: linear-gradient(135deg, #0f172a, #2563eb);
-    background-attachment: fixed;
+    background-color: white;
 }
 
+
 .container {
-    border: 10px solid #ec0f0f;
+    padding: var(--spacing-md);
+
+}
+
+.header-profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #0f172a, #301beec1);
+
+}
+.profile-info h1 {
+    font-family: system-ui, sans-serif;
+    color: aliceblue;
+}
+
+.profile-info  {
+
+    font-family: system-ui, sans-serif;
+    color: aliceblue;
+    
 }
 
 .profile-image {
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    border: 3px solid #fff;
+    border: 2px solid #d4cfcfd4;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
-        object-fit: cover;
+    object-fit: cover;
 }
