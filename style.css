@@ -2,7 +2,8 @@ body{
 
 background-color: #cfd9ee;
 
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
 }
 :root {
     --gap: 30px;
@@ -37,23 +38,36 @@ section {
     padding: var(--spacing-md);
 }
 
-
-
   .container {
-    width: 100%;
     max-width: 1000px;
-    margin: 0 auto;
-    padding: 0;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+
     background-color: #ffffff;
     border-radius: var(--border-radius);
+}
+.about-me {
+    display: flex;
+    gap: 40px;
+}
+
+.about-me-content {
+    flex: 2;
+}
+
+.contact-info {
+    flex: 1;
 }
 
 .header-profile {
     display: flex;
-    gap: 35px;
     align-items: center;
-    padding: var(--spacing-lg) var(--spacing-md);
+    gap: 40px;
+    padding: 40px;
     background: linear-gradient(135deg, #0f172a, #301beec1);
+    border-radius: 8px 8px 0 0;
 }
 
 .profile-image {
@@ -86,13 +100,43 @@ section {
 
 }
 
+.qualification-section {
+    display: flex;
+    gap: 180px;
+    border: 1px solid #d4cfcfd4;
+}
+
+.atividades-list{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 /* Responsividade (Mobile e Tablets) */
 @media (max-width: 768px) {
+
     .header-profile {
         flex-direction: column;
         text-align: center;
         padding: var(--spacing-md);
+        gap: var(--spacing-md);
+    }
+
+    .qualificacoes {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    section {
+        padding: var(--spacing-md);
+    }
+
+
+    .about-me {
+        flex-direction: column;
         gap: var(--spacing-md);
     }
 }
